@@ -16,7 +16,6 @@
 </head>
 
 <body>
-
 <!-- We need 4 elements on the page:
   Enter new player
   current player score
@@ -25,10 +24,29 @@
 -->
   <main class="container-fluid" id="app">
     <section class="row">
-      <div class="col-3">
+      <div class="col-4">
         <form onsubmit="app.playersController.addPlayer()" action="">
           <input class="form-control m-3" type="text"  placeholder="ENTER NAME" name="name">
         </form>
+          <div class="card m-3" >
+            <h1 class="p-3">High Scores:</h1>
+            <div id="scoreBoard">
+              <!-- <div class="d-flex justify-content-between">
+                <p class="ps-2">Top Player</p><p class="pe-2">score</p>
+              </div> -->
+            </div>
+          </div>
+      </div>
+      <div class="col-8 align-self-center text-center">
+        <div id="playerCard" class="card m-3">
+          <h2>Active player name</h2><p>score</p>
+        </div>
+        <div class="card">
+          <p>Word</p>
+          <form action="" class="p-3">
+            <input class="form-control text-center" type="text"  placeholder="spell the word" name="name">
+          </form>
+        </div>
       </div>
     </section>
 
